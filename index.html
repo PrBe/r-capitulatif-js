@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recapjs</title>
 </head>
+<style>
+
+  .container{
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  }
+
+  #chest{
+    margin: 5% auto;
+  }
+
+
+</style>
 <body style="background:wheat">
+  <div class="container">
     <h1 style="text-align: center;">Demonstration des connaissances en js</h1>
     <br>
     <section style="text-align: center; border: solid salmon 3px; background-color: pink;">
-
-        <!--Contenu proposé par Michel Vilbert-->
+    <!--Contenu proposé par Michel Vilbert-->
         <h2>Clique sur le </h2>
-
         <div id="clickedd">
-            <img src="./bvn.PNG" alt="chest">
+            <img id="chest" src="./bvn.PNG" alt="chest">
         </div>
-
-
     </section>
-
-    <script type="text/javascript" src="event.js"></script>
+  </div>
+  <script type="text/javascript" src="event.js"></script>
 </body>
 </html>
