@@ -2,5 +2,10 @@
     background-image: linear-gradient(to right, rgb(255,0,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,255), rgb(0,0,255), rgb(255,0,255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-display: table;
+    display: table;
+    margin: 0 auto;
+}
+
+#Roll{
+    text-align: center;
 }
