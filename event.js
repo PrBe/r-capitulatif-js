@@ -180,3 +180,10 @@ setInterval(ColorTextRoll, 1)
 
 // Code de Grégor
 
+// code PrBe
+
+var mouseclique = document.getElementById("clique").onclick =
+function(e){
+    console.log("clique: " + mouseclique);
+    alert("vous avez cliquer");
+}
