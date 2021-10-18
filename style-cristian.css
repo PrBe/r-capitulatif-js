@@ -1,0 +1,58 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    width: 50%;
+    margin: auto;
+   
+
+    
+}
+
+.section-cristian{
+    background: url("./background.png") center;
+    font-size: 1.7em;
+    display:flex;
+    flex-flow: column wrap;
+    text-align: center;
+    
+    
+}
+
+header{
+    background-color: aquamarine;
+}
+
+main{
+    background-color: lightyellow;
+    width: 100%;
+    padding: 100px;
+}
+#image-start{
+    display: block;
+}
+#image-start img{
+    width:300px ;
+}
+#image-start h1{
+    color:red;
+}
+#image-start button{
+    padding: 10px;
+    width: 100px;
+}
+#buttons{
+    transform: scale(0);
+}
+#jeu{
+   transform:scale(0);
+}
+footer{
+    background-color: black;
+    color: white;
+}
