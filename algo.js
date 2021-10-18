@@ -51,7 +51,7 @@ function assign_consign(consign, consign_top, consign_right, consign_bottom, con
 */
 function    set_data_in_label(consign)
 {
-    var labels = document.getElementsByTagName("label");
+    var labels = document.getElementsByClassName("label_consigne");
     for (var i = 0; i < labels.length; i++)
     {
         labels[i].innerHTML = consign[Math.floor(i / 4)][i % 4];
@@ -210,7 +210,7 @@ function    place(tab, consign, pos)
 */
 function    set_data_in_input(tab)
 {
-    var inputs = document.getElementsByTagName("input");
+    var inputs = document.getElementsByClassName("input_user");
     for (var i = 0; i < inputs.length; i++){
         inputs[i].value = tab[Math.floor(i / 4)][i % 4];
     }
@@ -384,12 +384,12 @@ function    check_right_range(tab, consign, x)
 */
 function    get_user_input(node, tab)
 {
-    var inputs = document.getElementsByTagName(node);
+    var inputs = document.getElementsByClassName(node);
     for (var i = 0; i < inputs.length; i++)
     {
         var x = Math.floor(i / 4);
-        var y = Math.floor(i % 4);
-        if (node === "input")
+        var y = i % 4;
+        if (node === "input_user")
             tab[x][y] = inputs[i].value;
         else
             tab[x][y] = inputs[i].innerHTML;
@@ -426,9 +426,10 @@ function    begin()
         [], [], [], []
     ];
 
-    get_user_input("label", consign);
+    get_user_input("label_consigne", consign);
     put_zero(tab);
     place(tab, consign, 0);
+    console.log("consigne");
     console.log(consign);
 }
 
@@ -447,8 +448,8 @@ function check_entries_user()
         [], [], [], []
     ];
 
-    get_user_input("input", tab);
-    get_user_input("label", consign);
+    get_user_input("input_user", tab);
+    get_user_input("label_consigne", consign);
     console.log(consign);
     console.log(tab);
 

@@ -1,54 +1,59 @@
 .container{
-  height: 100vh;
-  width: 60%;
-  margin: 0 auto;
-}
-
-#chest{
-  margin: 5% auto;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .container section{
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 2px;
+    word-break: break-word;
+    background-color: rgba(92, 58, 58, 0.3);
+  }
+  
+.container section h1{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #TextRoll{
-    background-image: linear-gradient(to right, rgb(255,0,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,255), rgb(0,0,255), rgb(255,0,255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: table;
-    margin: 0 auto;
+      background-image: linear-gradient(to right, rgb(255,0,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,255), rgb(0,0,255), rgb(255,0,255));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: table;
+      margin: 0 auto;
 }
 
-#Roll{
-    text-align: center;
-}
-
-.bloc-akin {
+.bloc-akin{
         margin: 0 auto;
-        height: 200px;
-        width: 500px;
-
-    }
-
-    .akin {
-        text-align: center;
-        color: white;
-        border: solid;
-        padding: 10px;
         width: 100%;
-        background-color: gray;
-    }
+}
 
-    .akin1 {
-        text-align: center;
-        color: white;
-        border: solid;
-        padding: 10px;
-        width: 50%;
-        background-color: gray;
-        float: left;
+.akin{
+    text-align: center;
+    color: white;
+    border: solid;
+    width: 95%;
+    margin: auto;
+    background-color: gray;
+}
 
-    }
+.akin1{
+    text-align: center;
+    color: white;
+    border: solid;
+    width: 50%;
+    background-color: gray;
+    float: left;
+}
 
-    .PrBeh2{
-        text-align: center;
-        background-color: aquamarine;
-        color: green;
-    }
+.PrBeh2{
+    text-align: center;
+    background-color: aquamarine;
+    color: green;
+}

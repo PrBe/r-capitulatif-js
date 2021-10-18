@@ -1,31 +1,25 @@
 #container{
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    width: 70%;
+    border: 1px solid red;
+    margin: 50px auto auto auto;
     align-content: center;
     position: relative;
 }
 
-
 #container #input_user{
-    position: relative;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-content: center;
-    width: 220px;
-    height: 220px;
-    margin: auto;
+    width: 100%;
 }
 
 #container #input_user input{
-    width: 39px;
-    height: 39px;
+    width: 15%;
+    height: 20%;
     margin: 5px;
     text-align: center;
-    border: 1px solid green;
+    justify-content: space-around;
 }
 
 #container #input_user > div.consign{
@@ -33,8 +27,7 @@
 }
 
 #container #consign_top, #container #consign_bottom{
-    width: 220px;
-    height: 20px;
+    width: 100%;
     left: 0px;
     text-align: center;
 }
@@ -48,8 +41,7 @@
 }
 
 #container #consign_left, #container #consign_right{
-    height: 220px;
-    width: 20px;
+    height: 100%;
     top: 0px;
     text-align: center;
     flex-flow: wrap column;
@@ -68,6 +60,7 @@
     justify-content: space-around;
 }
 
+/* label */
 #container div.consign label{
     background-color: rgb(117, 182, 117);
     padding: 2px;
@@ -77,16 +70,13 @@
     line-height: 15px;
 }
 
-#container #info{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    height: 25px;
-    width: 250px;
-    bottom: 15px;
-    left: 20%;
+/* menu bouton */
+#section_jm nav{
+    width: 80%;
+    margin: 20px auto;
 }
 
+/* p: réponse */
 #isGood{
     margin: auto;
     text-align: center;
