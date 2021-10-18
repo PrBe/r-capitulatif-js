@@ -1,32 +1,20 @@
 
 
 .section-cristian{
-    width: 50%;
-    margin:auto;
-    background: url("./background.png") center;
-    font-size: 1.7em;
+    background: url("./background.png") center no-repeat;
     display:flex;
     flex-flow: column wrap;
     text-align: center;
-    
-    
 }
 
 header{
     background-color: aquamarine;
 }
 
-main{
-    background-color: lightyellow;
-    width: 100%;
-    padding: 100px;
-}
 #image-start{
     display: block;
 }
-#image-start img{
-    width:300px ;
-}
+
 #image-start h1{
     color:red;
 }
