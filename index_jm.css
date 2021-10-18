@@ -1,0 +1,93 @@
+#container{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+
+
+#container #input_user{
+    position: relative;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-content: center;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+}
+
+#container #input_user input{
+    width: 39px;
+    height: 39px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid green;
+}
+
+#container #input_user > div.consign{
+    position: absolute;
+}
+
+#container #consign_top, #container #consign_bottom{
+    width: 220px;
+    height: 20px;
+    left: 0px;
+    text-align: center;
+}
+
+#container #consign_bottom{
+   bottom: -20px;
+}
+
+#container #consign_top{
+    top: -20px;
+}
+
+#container #consign_left, #container #consign_right{
+    height: 220px;
+    width: 20px;
+    top: 0px;
+    text-align: center;
+    flex-flow: wrap column;
+}
+
+#container #consign_right{
+    right: -25px;
+}
+
+#container #consign_left{
+    left: -25px;
+}
+
+#container div.consign{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container div.consign label{
+    background-color: rgb(117, 182, 117);
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    line-height: 15px;
+}
+
+#container #info{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    width: 250px;
+    bottom: 15px;
+    left: 20%;
+}
+
+#isGood{
+    margin: auto;
+    text-align: center;
+}

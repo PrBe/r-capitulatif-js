@@ -6,16 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recapjs</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index_jm.css" />
     <style>
-        .container{
-        height: 100vh;
-        width: 60%;
-        margin: 0 auto;
-        }
 
-        #chest{
-          margin: 5% auto;
-        }
     </style>
 </head>
 
@@ -32,6 +25,11 @@
         </div>
     </section>
 
+    <!-- Code de Pierre -->
+    <section>
+      
+    </section>
+
 
   <!-- Code de Grégor -->
     <section id="Roll">
@@ -39,10 +37,67 @@
         <p id="TextRoll">Ici, c'est ma section namoi!</p>
     </section>
 
+  <!-- Code de jm-->
+
+  <h1 style="text-align: center;">Bienvenu au jeu du gratte ciel !<br>(et bon courage !)</h1>
+  <div id="container">
+      <p style="position: absolute; top: -10px">Placez des numéro allant de 1 à 4 de manière à ce que chaque ligne et colonne voie le bon nombre de caisses de chaque point de vue possible.</p>
+      <div id="input_user">
+          <div id="consign_top" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_right" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_bottom" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_left" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+      </div>
+      <div id="info">
+          <button id="btnTest">Test</button>
+          <button id="btnMap">New map</button>
+          <button id="btnSolution">Avoir la réponse</button>
+      </div>
+  </div>
+  <p id="isGood"></p>
+
   </div> <!--fin du container -->
 
     <!-- liens Javascript perso-->
     <!-- Code de Grégor -->
   <script type="text/javascript" src="event.js"></script>
+  <script type="text/javascript" src="algo.js"></script>
 </body>
 </html>
