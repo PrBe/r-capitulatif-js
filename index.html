@@ -1,4 +1,7 @@
+
+
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +10,7 @@
     <title>Recapjs</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index_jm.css" />
+    <link rel="stylesheet" href="style-cristian.css">
     <style>
 
     </style>
@@ -92,12 +96,68 @@
       </div>
   </div>
   <p id="isGood"></p>
+    
+    <!--code Akin -->
+    <div class="bloc-akin">
+        <div class="akin">
+            <label>Akin</label>
+        </div>
+        <br>
+        <div class="akin1" id="b1">
+            <label id="vert">Clique ici</label>
+        </div>
+        <div class="akin1" id="b2">
+            <label id="orange">Clique ici</label>
+        </div>
+        <br>
+        <div class="akin1" id="b3">
+            <label id="rouge">Clique ici</label>
+        </div>
+        <div class="akin1" id="b4">
+            <label id="noir">Clique ici</label>
+        </div>
+        <br>
+        <b>
+            <p style="text-align: center; color: grey;" id=inst></p>
+        </b>
+        <center><button type="button" id="instru-akin">Instruction</button></center>
+    </div>
 
-  </div> <!--fin du container -->
+    <!--Fin html-->
 
+        
+    <!--Code christian-->
+  <section class="section-cristian">
+    <h1>TRY AND FIND THE NUMBER</h1>
+    <div id="image-start">
+        <img src="./gongyoo.jfif" alt="gongyoo">
+        <h1>WANNA PLAY A GAME?</h1>
+        <button id="Yes" onclick="ChoixOui()">Yes</button>
+        <button id="No" onclick="ChoixNon()">No</button>
+    </div>
+    <div id="buttons">
+        <button id="niveau1" onclick="niveau1()">Niveau 1</button>
+        <button id="niveau2" onclick="niveau2()">Niveau 2</button>
+        <button id="niveau3" onclick="niveau3()">Niveau 3</button>
+    </div>
+    <div id="jeu">
+        Nombre :<input type="text" id="nombre-choisi" value="0"><br>
+        <button id="clicked" onclick="click_utili()">Choisir</button><br>
+        <p id="verification"></p>
+        <p id="nombre_alea"></p>
+        <p id="nb_indice"></p>
+
+    </div>
+    <p>&copy;FifthYonko M.D.L</p>
+    
+</section>
+</div> <!--fin du container -->
+    
     <!-- liens Javascript perso-->
     <!-- Code de Grégor -->
   <script type="text/javascript" src="event.js"></script>
   <script type="text/javascript" src="algo.js"></script>
+  <script type="text/javascript" src="jeu-cristian.js"></script>
 </body>
 </html>
+

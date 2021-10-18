@@ -19,3 +19,30 @@
 #Roll{
     text-align: center;
 }
+
+.bloc-akin {
+        margin: 0 auto;
+        height: 200px;
+        width: 500px;
+
+    }
+
+    .akin {
+        text-align: center;
+        color: white;
+        border: solid;
+        padding: 10px;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .akin1 {
+        text-align: center;
+        color: white;
+        border: solid;
+        padding: 10px;
+        width: 50%;
+        background-color: gray;
+        float: left;
+
+    }
