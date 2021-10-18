@@ -10,31 +10,41 @@
 const titleRoll = document.getElementById('TitleRoll');
 const textRoll = document.getElementById('TextRoll');
 
-var colorRoll = [0, 255, 0];
+var colorRoll = [255, 0, 0];
 var mode = 0;
 
 function ColorTitleRoll(){
     if (mode == 0) {
-        colorRoll[1] --;
-        colorRoll[2] ++;
-    }else if (mode == 1) {
-        colorRoll[2] --;
-        colorRoll[0] ++;
-    } else {
-        colorRoll[0] --;
         colorRoll[1] ++;
+    }else if (mode == 1) {
+        colorRoll[0] --
+    }else if (mode == 2) {
+        colorRoll[2] ++;
+    }else if (mode == 3) {
+        colorRoll[1] --
+    }else if (mode == 4) {
+        colorRoll[0] ++;
+    }else {
+        colorRoll[2] --
     }
-    if (colorRoll[1] == 255 && colorRoll[2] == 0 && colorRoll[0] == 0) {
+    if (colorRoll[0] == 255 && colorRoll[1] == 0 && colorRoll[2] == 0) {
         mode = 0;
-    }else if (colorRoll[1] ==0 && colorRoll[2] == 255 && colorRoll[0] == 0) {
+    }else if (colorRoll[0] ==255 && colorRoll[1] == 255 && colorRoll[2] == 0) {
         mode = 1;
-    } else if (colorRoll[1] ==0 && colorRoll[2] == 0 && colorRoll[0] == 255){
+    }else if (colorRoll[0] ==0 && colorRoll[1] == 255 && colorRoll[2] == 0) {
         mode = 2;
+    }else if (colorRoll[0] ==0 && colorRoll[1] == 255 && colorRoll[2] == 255) {
+        mode = 3;
+    }else if (colorRoll[0] ==0 && colorRoll[1] == 0 && colorRoll[2] == 255) {
+        mode = 4;
+    }else if (colorRoll[0] ==255 && colorRoll[1] == 0 && colorRoll[2] == 255) {
+        mode = 5;
     }
+    console.log(mode)
     let couleur = "rgb("+colorRoll[0]+", "+colorRoll[1]+", "+colorRoll[2]+")"
     titleRoll.style.color = couleur;
 }
-setInterval(ColorTitleRoll, 10)
+setInterval(ColorTitleRoll, 5)
 
 var colorRollText = [[255,0,0],[255,255,0],[0,255,0],[0,255,255],[0,0,255],[255,0,255]];
 var modeText = [0,1,2,3,4,5];
