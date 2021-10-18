@@ -1,8 +1,8 @@
-// var clickedd = document.getElementById("clickedd").onclick =
-// function(e){
-//     console.log("clickedd: " + clickedd);
-//     alert("Bienvenue sur le site récapitulatif");     
-// }
+var clickedd = document.getElementById("clickedd").onclick =
+function(e){
+    console.log("clickedd: " + clickedd);
+    alert("Bienvenue sur le site récapitulatif");
+}
 
 
 
@@ -93,7 +93,7 @@ function ColorTextRoll(){
     let couleurText = "linear-gradient(to right";
     for (let Roll = 0; Roll < colorRollText.length; Roll++) {
         couleurText += ", rgb("+colorRollText[Roll][0]+", "+colorRollText[Roll][1]+", "+colorRollText[Roll][2]+")";
-        
+
     }
     textRoll.style.backgroundImage = couleurText;
 }
