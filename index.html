@@ -1,52 +1,100 @@
-<!doctype html>
 
 
+<!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recapjs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index_jm.css" />
+    <style>
 
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
+    </style>
 </head>
-<!--Style/CSS - Akin -->
-<style>
-    .bloc-akin {
-        margin: 0 auto;
-        height: 200px;
-        width: 500px;
 
-    }
+<body style="background:wheat">
+  <div class="container"> <!-- Toutes les sections de vos code doivent etre contenu par le container-->
+    <h1 style="text-align: center;">Demonstration des connaissances en js</h1>
 
-    .akin {
-        text-align: center;
-        color: white;
-        border: solid;
-        padding: 10px;
-        width: 100%;
-        background-color: gray;
-    }
+    <br>
+    <section style="text-align: center; border: solid salmon 3px; background-color: pink;">
+    <!--Contenu proposé par Michel Vilbert-->
+        <h2>Clique sur le </h2>
+        <div id="clickedd">
+            <img id="chest" src="./bvn.PNG" alt="chest">
+        </div>
+    </section>
 
-    .akin1 {
-        text-align: center;
-        color: white;
-        border: solid;
-        padding: 10px;
-        width: 50%;
-        background-color: gray;
-        float: left;
-
-    }
-</style>
-
-<body>
+    <!-- Code de Pierre -->
+    <section>
+      
+    </section>
 
 
+  <!-- Code de Grégor -->
+    <section id="Roll">
+        <h2 id="TitleRoll">Welcome to RollTopia</h2>
+        <p id="TextRoll">Ici, c'est ma section namoi!</p>
+    </section>
+
+  <!-- Code de jm-->
+
+  <h1 style="text-align: center;">Bienvenu au jeu du gratte ciel !<br>(et bon courage !)</h1>
+  <div id="container">
+      <p style="position: absolute; top: -10px">Placez des numéro allant de 1 à 4 de manière à ce que chaque ligne et colonne voie le bon nombre de caisses de chaque point de vue possible.</p>
+      <div id="input_user">
+          <div id="consign_top" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_right" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_bottom" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+          <div id="consign_left" class="consign">
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+              <label>0</label>
+          </div>
+
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+      </div>
+      <div id="info">
+          <button id="btnTest">Test</button>
+          <button id="btnMap">New map</button>
+          <button id="btnSolution">Avoir la réponse</button>
+      </div>
+  </div>
+  <p id="isGood"></p>
+    
     <!--code Akin -->
     <div class="bloc-akin">
         <div class="akin">
@@ -74,15 +122,13 @@
     </div>
 
     <!--Fin html-->
-    <!-- Bootstrap JavaScript -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+  </div> <!--fin du container -->
 
-
-    <script type="text/javascript" src="event.js"></script>
-  
+    <!-- liens Javascript perso-->
+    <!-- Code de Grégor -->
+  <script type="text/javascript" src="event.js"></script>
+  <script type="text/javascript" src="algo.js"></script>
 </body>
-
 </html>
+
