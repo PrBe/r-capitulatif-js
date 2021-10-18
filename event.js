@@ -1,4 +1,11 @@
 
+var clickedd = document.getElementById("clickedd").onclick =
+function(e){
+    console.log("clickedd: " + clickedd);
+    alert("Bienvenue sur le site récapitulatif");
+}
+
+
 
 //Akin - changement de couleur des que l'on clique sur une des div, recliquer remet la couleur d'origine + changement de label des que l'on clique sur les différents div "Cliquer ici -> Vert"//
 var b1 = document.getElementById("b1");
@@ -76,14 +83,6 @@ var clicked = document.getElementById("instru-akin").onclick = function(e){
     console.log("instru-akin: " + clicked);
     alert("Instruction : Cliquer sur un rectangle pour lui changer ça couleur, recliquer pour remettre sa couleur d'origine");     
 }
-
-// code Michel
- var clickedd = document.getElementById("clickedd").onclick =
-     function(e){
-     console.log("clickedd: " + clickedd);
-    alert("Bienvenue sur le site récapitulatif");     
- }
-
 
 
 // Code de Grégor
@@ -173,7 +172,7 @@ function ColorTextRoll(){
     let couleurText = "linear-gradient(to right";
     for (let Roll = 0; Roll < colorRollText.length; Roll++) {
         couleurText += ", rgb("+colorRollText[Roll][0]+", "+colorRollText[Roll][1]+", "+colorRollText[Roll][2]+")";
-        
+
     }
     textRoll.style.backgroundImage = couleurText;
 }
