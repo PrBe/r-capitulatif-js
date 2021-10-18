@@ -1,20 +1,8 @@
 
 
-
-*{
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-    width: 50%;
-    margin: auto;
-   
-
-    
-}
-
 .section-cristian{
+    width: 50%;
+    margin:auto;
     background: url("./background.png") center;
     font-size: 1.7em;
     display:flex;
