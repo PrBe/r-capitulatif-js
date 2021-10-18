@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recapjs</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .container{
-        height: 100vh;
-        width: 60%;
-        margin: 0 auto;
-        }
-    
-        #chest{
-          margin: 5% auto;
-        }
-    </style>
-</head>
-
-<body style="background:wheat">
-  <div class="container">
-    <h1 style="text-align: center;">Demonstration des connaissances en js</h1>
-
-    <br>
-    <section style="text-align: center; border: solid salmon 3px; background-color: pink;">
-    <!--Contenu proposé par Michel Vilbert-->
-        <h2>Clique sur le </h2>
-        <div id="clickedd">
-            <img id="chest" src="./bvn.PNG" alt="chest">
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index_jm.css" />
+        <title>Script++</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="./algo.js"></script>
+        <h1 style="text-align: center;">Bienvenu au jeu du gratte ciel !<br>(et bon courage !)</h1>
+        <div id="container">
+            <p style="position: absolute; top: -10px">Placez des numéro allant de 1 à 4 de manière à ce que chaque ligne et colonne voie le bon nombre de caisses de chaque point de vue possible.</p>
+            <div id="input_user">
+                <div id="consign_top" class="consign">
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                </div>
+                <div id="consign_right" class="consign">
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                </div>
+                <div id="consign_bottom" class="consign">
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                </div>
+                <div id="consign_left" class="consign">
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                    <label>0</label>
+                </div>
+                
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+            </div>
+            <div id="info">
+                <button id="btnTest">Test</button>
+                <button id="btnMap">New map</button>
+                <button id="btnSolution">Avoir la réponse</button>
+            </div>
         </div>
-    </section>
-  </div>
-
-  <!-- Code de Grégor -->
-    <section id="Roll">
-        <h2 id="TitleRoll">Welcome to RollTopia</h2>
-        <p id="TextRoll">Ici, c'est ma section namoi!</p>
-    </section>
-    <!-- Code de Grégor -->
-  <script type="text/javascript" src="event.js"></script>
-</body>
+        <p id="isGood"></p>
+    </body>
 </html>
